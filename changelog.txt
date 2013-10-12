@@ -1,0 +1,629 @@
+Cabra for Windows, Mac OS X, and Linux:
+
+0.7.1 - currently in beta:
+	Bugfixes.
+	Bugs fixed:
+		No scroll bar in card creator fields (thanks Hannah.)
+		No scroll bar in studying fields.
+		Points label doesn't update when you gain points.
+
+0.7.0 - October 29, 2012:
+	General: Prize system - you can spend the points you earn on virtual prizes.thanks
+	Bugs fixed:
+		If cards.txt file is corrupted, Cabra crashes. Now the project's cards are lost but Cabra is OK.
+	New features:
+		Prize system: you can spend your points on buying virtual prizes (like trading cards with animals) to add to your collection.
+		Themes are now all free.
+		You can now purge all Cabra projects and user data in the event of serious corruption.
+		
+0.6.4 - May 27, 2012:
+	General: Bugfixes; a stepping-stone release toward 0.7.0.
+	Bugs fixed:
+		Project list panel text blurred when you scroll.
+		Projects spaced too far out in project list panel when you don't have very many.
+		About/changelog text doesn't show up (500 HTTP error when viewing.)
+	New features:
+		Points tab renamed Vault.
+		Points label in Points tab is simpler and cleaner.
+		Projects centered in project list panel.
+		The active project is bolded in the project list panel.
+		
+0.6.3 - April 8, 2012:
+	General: Revamped the project list panel to the left.
+	Bugs fixed:
+		None
+	New features:
+		New project list showing the names of all the projects in a panel. You can right-click on a project name to edit it.
+		You can now export a project straight from the project list.
+		You can now import a project straight from the project list.
+		Removed rename/delete/activate buttons from the project panel.
+		When editing a note, 20-pt and Courier New font is available.
+		Settings panel: you can now choose any system font.
+	Other:
+		On the card creation dialog there's a hint to use Tab to cycle through fields.
+		On the studying dialog there's a hint that your changes are autosaved.
+		When editing a note, Black is at the top of the list.
+		Card Manager is larger and no longer shows the text up top.
+		Note editing pane is larger.
+		Points panel is larger.
+		Removed borders from underneath toolbars.
+		"Add project" button now reads "Create a project".
+		Removed old code and comments to slim down Cabra.
+		Changed default repetitions so rank A is studied more often.
+
+0.6.3 alpha 1 - February 26, 2012:
+	General: Added a new "check for updates" option, along with a major bugfix.
+	Bugs fixed:
+		MAJOR BUG: some cards never get studied if Settings.maxCards < number of cards in session.
+		Max cards per session part of settings panel gets cut off on some platforms.
+	New features:
+		"Check for updates" menu where you can manually check for an update to Cabra.
+		Every 7 days, if there's an update Cabra will inform you.
+		New preference: check for updates at certain intervals.
+		Settings window is now in a tabbed pane.
+	Other:
+		Locked themes are now shown with a "locked" menu item in the Themes menu.
+		Larger "Did you know this?" buttons with text on them.
+
+0.6.2 - January 14, 2012:
+	General: Big bugfixes and polishing.
+	Bugs fixed:
+		Major bug: notes get deleted when you upgrade.
+		Major bug: sometimes cards "magically" get skipped; they go from several reps left to 0.
+		Settings window doesn't update to match theme when theme changes.
+	New features:
+		When moving projects elsewhere, there's no more confirm dialog - that was just confusing.
+		Card repetition changed; cards you know well don't appear as often. A->0, B->1, C->3, D->6, E->10
+		The "did you know this?" buttons are now bigger and have text on them.
+		Improved behind-the-scenes handling of sessions.
+		New preference: maximum number of cards you want to study per session (prevents monster sessions.)
+		Replaced the "Irish Luck" theme with a "Lilac" theme, a pleasing soft purple.
+		Minor: in the Notes tab, having many tabs with long names will cause them to scroll and not wrap anymore.
+		Emblem now drawn on Settings panel.
+	Other:
+		No more "did you know this?" text on the study window.	
+		Several new icons to reflect improved themes.
+
+0.6.2b1 (changes from 0.6.1) - November 20, 2011:
+	General: Many bug fixes, font customization, and a settings menu.
+	Bugs fixed:
+		Major bug: if user data has been corrupted by a previous version (0.6.0), the program doesn't even load. (Now it resets the user data.)
+		On some platforms, text areas are cut off or the wrong size. (Should now be the same across platforms and fonts.)
+		Cabra sometimes doesn't open because of an error. (Now it tells you about the error.)
+		Cabra should not crash on opening anymore. I hope.
+	New features:
+		User can now  change the font Cabra uses.
+		New "Settings" menu.
+		In Settings: You can now move projects to a new folder or load projects from a new folder.
+		In Settings: You can now change the preferred font size and name.
+		New in-session progress bar while studying showing you how you're doing and how far along you are. Shows result (yes, no, sort of, skipped) for each card.
+		New table in end-of-session window showing you how you did.
+		Table is centered in end-of-session window.
+		Cabra will let you know if there's a fatal error.
+		Improved backwards compatibility (should be able to import safely from 0.5.0+).
+		When you click on the scaled-down version of an image in the Card Manager tab or Study window, you see the full-size picture.
+	Other:
+		Keyboard shortcut for Codes menu now Ctrl+C, for Cabra menu now Ctrl+A.
+		Nightly builds are officially recognized: they give you points and appear as a new version.
+		User is now notified and given points for upgrading to a nightly release.
+		Images are no longer scaled down to size when included in a project.
+		Improved bug-reporting method: when an exception is thrown in Controller(), the full stack trace is shown to the user, who is told to email it to developer.
+
+0.6.1 (changes from 0.6.1 beta 1) - November 7, 2011:
+	General: Bugfixes and minor polishing.
+	Bugs fixed:
+		Gaining points without a project doesn't make the points tab refresh.
+		"Skip" button keeps getting highlighted when studying.
+		Cherry emblem isn't translucent.
+		For some reason, upgrading causes images in cards to break.
+	New features:
+		When you gain points, a small badge is shown in the top right corner.
+		Emblem now drawn in card creator window.
+		New theme: Seasonal. Changes based on the season (Winter -> Snow, Spring -> Spring, Summer -> Beach, Fall -> Halloween).
+	Other:
+		Minor word changes.
+		Some stuff is now bold/italic.
+		Added padding to the project toolbar buttons.
+		Bar graphs are shorter and buttons are bigger on home tab.
+		New images and colors for Snow theme.
+		New images for Halloween theme.
+		New globe icon.
+		Sharpened barcode icon.
+	
+0.6.1 beta 1 (changes from 0.6.0) - October 28, 2011:
+	General: Bugfixes, developer improvements, and improvements to first run.
+	Bugs fixed:
+		When you open Cabra for the second time after a fresh install, it thinks you upgraded.
+		Entering a code with leading or trailing spaces makes Cabra think it's a wrong code.
+		Cabra randomly messes up your user data.
+		When new user data types are added, the rest are messed up.	
+	New features:
+		Much nicer welcome window on first run.
+		New code: 6FH3VR (given on first run)
+		When you redeem a code, you can see how many points it was worth.
+		New theme: Cherry (available at level Kid.)
+	Other:
+		Point levels (Kid, Student, etc.) come with a/an attached so there's no more 'a(n)'.
+		Changed ranks: 6 is now Prodigy, 7 is now Genius, 8 is now Archgoat.
+		hathix.com Piwik now tracks which hits come from Cabra itself.
+		A table on hathix.com now tracks how many redeems each code gets.
+
+0.6.0 (changes from 0.6.0b2) - October 23, 2011:
+	General: Added point codes, and polishing.
+	Bugs fixed:
+		Canceling the print dialog causes an error.
+		Deleting a project causes the project list panel to not shrink back to normal size.
+	New features:
+		New "help" menu item.
+		New "codes" feature - can enter various codes (found in the help, on social networks, etc.) to earn points.
+		You can randomly earn points on startup.
+		Alerts user to changelog when they upgrade.
+		User earns points when they upgrade.
+	Other:
+		When you "sort of" know a card, its rank is taken down by 1 (previously it was just left there.)
+		Window is slightly bigger so stuff isn't cut off on some platforms.
+
+0.6.0b2 (changes from 0.6.0b1) - September 29, 2011:
+	General: Major improvements - Themes must be unlocked, emblems in window, bug fixes.
+	Bugs fixed:
+		Major bug: problems with study session - endless circling of cards, changing number of cards, only one card being studied per session
+		"Points" tab doesn't change when it should.
+		Study dialog isn't updated when cards are added, changed, or removed - so sometimes you study old cards.
+	New features:
+		You earn points for importing and exporting projects, getting all cards right in a session (min. 10/25/50), and printing cards.
+		Themes must now be unlocked (by gaining ranks.)
+		New theme: Evil Goat.
+	Other:
+		Points tab now has an emblem in the corner.
+		Emblem in the corner of the window changes based on the theme. (Used to just be goat)
+		Slight tweak to Rain theme.
+		New globe icon.
+		Improved font on bar graphs in home tab.
+		Adjusted point values of activities.
+
+0.6.0b1 (changes from 0.5.2) - September 27, 2011:
+	General: Points added.
+	Bugs fixed:
+		None
+	New features:
+		Points added.
+		New "points" tab.
+		New theme: Under The Sea.
+		When you mouse over a status's bar graph, information about that status is shown.
+	Other:
+		Cabra window now centered on screen.
+		Under-the-hood overhaul to user data management.
+
+0.5.2 (changes from 0.5.1) - May 29, 2011:
+	General: added "sort of" studying option.
+	Bugs fixed:
+		Rounding errors cause you to see a little blue at the end of the bar in the last session info panel even if no cards were skipped.
+		Removed text from "Did you know this" buttons (it's a tooltip now.)	
+		"Reset deck" button on home panel says "Make all cards not studied."		
+	New features:
+		"Sort of" option while studying.
+		You can make cards with only a picture and answer - no question.
+		When adding an image to a card, the image is copied - not moved.
+		You can click on URLs in the About window to visit that URL in your browser.		
+	Other:
+		If you have a beta version but a newer beta version is out, you are directed to download the newer beta version.
+		Some new icons.
+		Installation note in Windows installer.
+		Several installer tweaks.
+
+0.5.1 (changes from 0.5.0) - May 8, 2011:
+	General: improvements that didn't make it into 0.5.0.
+	Bugs fixed:
+		None
+	New features:
+		In the About window, you can see if there's an upgrade available and, if so, go to the download page.
+		In Import/Export menu, there's a link to go online to upload/download projects.
+		If there's a fatal error, Cabra will let you know.
+	Other:
+		Website is now getcabra.com.
+		Source is packaged in .7z instead of .zip.
+
+0.5.0 (changes from 0.5.0b1) - April 17, 2011:
+	General: final fixes and miscellaneous improvements.
+	Bugs fixed:
+		Adding a new folder while trying to insert a picture fails.
+		Prematurely ending a study session makes Cabra think you skipped things you didn't study.
+		Label with name of project/number of cards is too small.
+		Changing the theme causes letters of rank to not show up in card viewer tab.
+		Having just one or two cards causes Card Manager tab to go screwy.
+	New features:
+		New theme: Halloween.
+		New theme: Irish Luck.
+		Removed theme: Soap.
+		At the end of a studying session, there is a button that lets you start a new session.
+		On the first boot, user is shown a welcome and some advice for getting started.
+	Other:
+		A bunch of new icons: island, coffee, rose, quit.
+		Improved the green of Rank E.
+		Improved font of letters in card panels.
+		"View cards" tab renamed "Card Manager."
+		New icon for Card Manager tab.
+		"Help" menu renamed "Cabra" since there's no help there.
+
+0.5.0b1 (changes from 0.5.0a1) - April 14, 2011:
+	General: polishing and bugfixes.
+	Bugs fixed:
+		Button on bottom of home page is cut off.
+		Trying to reset the deck asks if you want to make all cards not studied.
+		Resetting the deck doesn't cause the cards that were moved to Rank A to be studied till next time.
+	New features:
+		Bar graphs on home page changed to vertical instead of horizontal.
+		On card viewer tab, the toolbar's color changes based on the rank of the card.
+		On card viewer tab, you can see the rank of the card.
+	Other:
+		Increased size of text area for answer when studying.
+		Cleaned up code for sessions.
+	
+0.5.0a1 (changes from 0.4.3) - April 7, 2011:
+	General: added statuses for cards. Cabra now uses the Leitnerian system.
+	Bugs fixed:
+		None
+	New features:
+		Cards now have ranks and sessions left.
+		There are now 5 ranks (up from 3.)
+		Study sessions are set up automatically for you.
+		There's a text area where you can enter your answer when studying.
+		Whole new home tab: it shows each of the new ranks in a bar graph.
+		Leitnerian system added.
+	Other:
+		Semi-compatible with cards from previous releases: cards created in older versions will work here, card created here won't work in older versions.
+		Cleaned up the code for cards.
+	
+0.4.3 (changes from 0.4.3b1) - March 29, 2011:
+	General: ironed out some issues.
+	Bugs fixed:
+		Dollar signs get backslashes in front of them.
+		Beta versions can't find the about page.
+	New features:
+		You can fit 6 cards on a page when printing instead of 5 (rows and font are smaller.)
+	Other:
+		Changed the "add card" button in the card creator window.
+		Changed title of print preview window.
+		Ubuntu and Mac OS X users get a better default font.
+		Cabra Portable gets the version number in the file name.
+
+0.4.3b1 (changes from 0.4.2) - March 25, 2011:
+	General: printing added.
+	Bugs fixed:
+		Line breaks lost when saving changes to a card.
+	New features:
+		Printing of cards is now available.
+	Other:
+		Ctrl-Space key binding in the card creator window changed to Tab.
+		Removed ability to have tabs in card text (spaces still work, though.)
+		Minor focusing tweaks for the note text area and toolbar.
+		The file's now called "Cabra 0.4.3 beta 1" instead of "Cabra_0.4.3b1".
+
+0.4.2 (changes from 0.4.2b1) - March 20, 2011:
+	General: a few final improvements.
+	Bugs fixed:
+		None
+	New features:
+		Dialogs are now centered in relation to the frame.
+		A goat is now drawn on the bottom right of the study window when you're setting up a session.
+		A goat is now drawn on the home page when you're getting started for the first time.
+	Other:
+		Some changed icons.
+		GPL removed from the installer (the GPL doesn't require the user to accept its terms since it gives rights.)
+
+0.4.2b1 (changes from 0.4.1) - March 16, 2011:
+	General: Big UI changes, including a new Card Viewer tab.
+	Bugs fixed:
+		Trying to export a project when you have no projects causes a crash.
+		Random errors when loading about browser (it's now thread-safe.)
+	New features:
+		When you are creating a card, you can see a preview of the image when you choose to add it.
+		There's a new tab where you can view, edit, and delete all your cards.
+		Studying is done in its own dialog, not a tab.
+		New theme: soap.
+		Default theme updated so it doesn't look so ugly.
+	Other:
+		When creating a card, the same font is used as when you're studying.
+		Improved themes a little.
+		Some new icons.
+	
+0.4.1 (changes from 0.4.1b1) - March 11, 2011:
+	General: An awful lot of little fixes.
+	Bugs fixed:
+		Resetting the deck in the middle of a studying session causes "Card 1 of 0" to show sometimes.
+		Quitting a study session without studying any cards still shows the last session's stats (which is pointless.)
+		Adding an image to a note always puts it at the end (now it goes where the caret is.)
+		Custom image icons in file dialogs are too large (now they're 16x16, the right size)
+		Importing a project of the same name as an existing project shows doesn't remove old project.		
+	New features:
+		Flashcards and notes have a cleaner default font.
+		Smarter notifications if you're resetting the deck (if you're studying, the session might end.)
+		Large images are reduced in size when they're added to a card.
+		When you try to add a project with the same name as an existing project, you're warned about possible overwrite.
+		When you try to rename a project to an existing project name, you're warned about possible overwrite.
+		If you're exporting (saving) somewhere and it'll overwrite a file, you are asked for confirmation.		
+		About browser has tabs and shows the GPL v3.	
+	Other:
+		"Reset deck" button disabled if all cards are not studied (because the cards wouldn't change if you clicked "reset deck.")
+		Confirmation dialog just shows text, not images, in the buttons.
+		The list of projects expands as necessary if you have a lot of projects.
+		You can visit Cabra's website (in your web browser) directly from the program.
+		Several new/changed icons.
+	
+0.4.1b1 (changes from 0.4.0) - March 7, 2011:
+	General: A bunch of minor improvements.
+	Bugs fixed:
+		No project is set as active when one project is deleted.
+		Even if there are no cards in the active project, the user still sees the 'start a session' panel in the study tab.
+	New features:
+		When editing a note, you see the font names in their font and the colors in their color.
+		Notification appears when exportation of a project is finished.
+		A small goat is drawn in the corner of the home tab.
+		Text areas line wrap at the end of the word.		
+	Other:
+		Import/Export moved to the menu bar.
+		More intuitive functionality for overwriting notes.
+		When you overwrite an old note, the new note's tab is shown.
+		Improved some themes' colors.
+		Several new icons.
+		Buttons below the project list are aligned left.
+		Released under GPL.
+		Source contains a readme and GPL text.
+		Installer has GPL in it.
+
+0.4.0 (changes from 0.4.0b2) - March 4, 2011:
+	General: a few final fixes.
+	Bugs fixed:
+		Stuff like 2/3 rounds to 66% instead of 67%.
+		Critical bug: cards don't save.
+	New features:
+		Stacked bar graph showing you how well you did when you end a session.
+	Other:
+		Color change for the spring theme.
+
+0.4.0b2 (changes from 0.4.0b1) - March 2, 2011:
+	General: numerous bugfixes relating to study sessions.
+	Bugs fixed:
+		Changing the active project to something else and back again causes a new card to be loaded.
+		Adding a card to the active project causes 2 new cards to be viewed.
+		Deleting the last card in a project still shows the 'set up a new session' panel.
+		Switching to another project and checking a box in the session setup panel affects the boxes in other projects' session setup panels.
+		If you have 2 sessions running at once, switching from one session to the other keeps the old card visible.
+		Resetting the deck after finishing a study session takes you back into that session.
+		Leaving a session early makes Cabra think you skipped all the cards you didn't study.
+	New features:
+		None
+	Other:
+		There's a border around the last session's statistics.
+		Slight file size reduction.
+
+0.4.0b1 (changes from 0.4.0a2) - Feb. 27, 2011:
+	General: studying sessions added.
+	Bugs fixed:
+		None
+	New features:
+		Studying sessions.
+	Other:
+		Card creation dialog has the same size textboxes as the study tab.
+		Mocha theme has legible disabled text.
+
+0.4.0a2 (changes from 0.4.0a2) - Feb. 24, 2011:
+	General: fixes and polish (but still no study sessions.)
+	Bugs fixed:
+		A project with no flashcards shows the previous project's cards in the study tab when set active.
+	New features:
+		"Shuffle deck" button added to home tab.
+		Improved file chooser for images: you see a thumbnail when viewing any image, and the "All files" filter is removed.
+		Key bindings when creating cards: Ctrl+Space to jump from the question text area to the answer text area, and to add the card from the answer text area.
+		Key bindings when studying: Alt+S to view the answer.
+	Other:
+		Rain theme has legible disabled text.
+		Helpful message instead of disabled components in the study tab when you have no cards in the active project.
+		"Reset deck" button has a new icon (the shuffle button has its old icon.)
+		Special icons for projects and images when using file choosers.
+		Reduced tabstop size for text areas.
+
+0.4.0a1 (changes from 0.3.3) - Feb. 22, 2011:
+	General: study panel revamped: both question and answer are shown at the same time (except answer is covered.)
+	Bugs fixed:
+		Too-long project name causes home panel to go screwy.
+	New features:
+		Deck is shuffled when a new card is added.
+		Card creator dialog is modal.		
+		Study panel revamped: both question and answer are shown at the same time (except answer is covered.)
+		"Did you know" radio buttons and the "next card" button replaced with one "did you know this: yes/no" button.
+		Skip/delete toolbar moved to the top of the studying panel.
+	Other:
+		When deleting a project or note, the project or note's name is bolded.
+
+0.3.3 (changes from 0.3.3rc1) - Feb. 20, 2011:
+	General: bugfixes and changes.
+	Bugs fixed:
+		Error when no project is selected and it's the last one, but you delete it anyway.
+		Viewing 2 cards with pictures in a row can cause the pictures to not show up.		
+	New features:
+		Study-style radio buttons are disabled if there are no cards that fit that filter.
+	Other:
+		Projects now saved with a .cproj extension.
+		Notes now saved with a .cnote exension.
+		Removed the "All Files" filter from the import/add image file choosers.
+		Card-creating dialog is recreated each time you click "Create card" (before, it just made it visible again)
+
+0.3.3rc1 (changes from 0.3.3a1) - Feb. 19, 2011:
+	General: fixes and improvements.
+	Bugs fixed:
+		Lots of thread-induced problems.
+	New features:
+		User data saved in a plain-text file.	
+		User data saved in background (another thread.)
+		Exporting a project runs in background.
+		When studying, you can see which card you're on (e.g. card 5 of 10.)
+		You can now delete the last project.
+	Other:
+		New colors for the bar graphs.
+		If no project is selected in the project selection list, the active one is assumed to be selected.
+		
+0.3.3a1 (changes from 0.3.2) - Feb. 17, 2011:
+	General: interface improvements to make your life easier, especially a home panel showing project card stats.
+	Bugs fixed:
+		None
+	New features:
+		Card creator panel replaced with a home panel showing project stats; click on a button to bring up the card creator panel.
+		Options menu moved into home panel.
+		Easier way to filter cards you study.
+		Support for only studying cards you haven't studied before.
+		Ability to reset the deck (make all cards not studied.)
+	Other:
+		New images for the import/export buttons.
+		GUI updater runs in a separate thread, giving a slight speed boost.
+		Card/note saver run in separate threads, giving slight speed boosts.
+		Reduced file size (JAR went from 287KB to 251KB.)	
+
+0.3.2 (changes from 0.3.2rc1) - Feb. 16, 2011:
+	General: some final fixes.
+	Bugs fixed:
+		Cross-platform installer installs a .exe for Cabra (which defeats the whole purpose of cross-platform.) Now it installs the JAR.
+		Toolbar in study panel overlaps image.
+	New features:
+		You can skip cards, letting you go to another card without seeing the answer of the current card
+		Toolbar added next to view answer/flip card button.		
+	Other:
+		Delete button moved to that toolbar.
+		New icon for the export project button.
+		The button to view answer/flip card is always the same size.
+	
+0.3.2rc1 (changes from 0.3.2a1) - Feb. 15, 2011:
+	General: polish and stuff.
+	Bugs fixed:
+		Cabra thinks there are no cards left when a card is deleted.
+	New features:
+		If you choose to view only not-learned cards and you're currently looking at a learned card, a not-learned card will be loaded.
+		You get a message to click the new card button if you view the new card tab.
+		Button to clear the image input field is disabled when nothing is in the picture input field.
+		It's easier to see which cards you don't know while studying.
+
+0.3.2a1 (changes from 0.3.1) - Feb. 14, 2011:
+	General: cards are now learned, not learned, or not studied.
+	Bugs fixed:
+		None
+	New features:
+		New algorithm for studying cards: cards are stored in a deck and retrieved systematically instead of just being grabbed randomly.
+		Images are shrunk when put into a note if they are larger than the text pane.
+		Cards are either learned, not learned, or not studied.
+		New way of studying: you are always asked if you knew a card or not.
+	Other:
+		Picture isn't moved to the project folder when added to a note.
+		Cards are backwards-incompatible.
+
+0.3.1 (changes from 0.3.0) - Feb. 13, 2011:
+	General: You can now import/export projects. ***First publicly-available version.
+	Bugs fixed:
+		Huge one: program crashes if you cancel when entering image into note
+	New features:
+		New themes: Spring and Mocha.
+		Ability to import/export projects. It's fully automated, just download/upload the zip file that is automatically created.
+	Other:
+		System/Metal themes removed
+		Removed useless old source files.
+		Project buttons (add a project, delete a project, etc.) changes to a toolbar instead of standalone buttons.
+		New Packjacket installer.
+		
+0.3.0 (changes from 0.3.0b2) - Feb 11, 2011:
+	General: a bunch of bugfixes and polish.
+	Bugs fixed:
+		Picture remains on study panel even when the active project is deleted
+	New features:
+		Flashcard images are centered when being viewed.
+		Notes can now have pictures.
+	Other:
+		Removed unused images.
+		When studying, the flashcard's text is focused.
+		Ctrl-H shortcut to make text red changed to Ctrl-R.
+		Answer box gets focus if it's left unfilled when creating a card.
+		Application icons are optimized for size (64x64 looks as clear as 12x12.)
+		Help browser removed.
+		File size reduced: JAR reduced 30%, EXE reduced 48%, installer reduced 30%, ZIP reduced 33%, installed size reduced 32%
+
+0.3.0b2 (changes from 0.3b1) - Feb 5, 2011:
+	General: Flash cards can now have pictures.
+	Bugs fixed:
+		None
+	New features:
+		Flash cards can now have pictures.
+
+0.3.0b1 (changes from 0.2.2) - Feb 4, 2011:
+	General: Rich text editing available for notes.
+	Bugs fixed:
+		"This is important" checkmark reset when entering an empty question/answer while making a card
+	New features:
+		Rich text editing available for notes (bold, underline, font family, font size, undo, redo, etc.)
+	Other:
+		A few new icons.
+		New 12x12, 16x16, and 20x20 goat icons.
+		Notes now save on exit
+		Cards can be deleted
+
+0.2.1 (changes from 0.2.0) - Jan 24, 2011:
+	General: a bunch of minor improvements.
+	Bugs fixed:
+		Error saving notes when Cabra tries to save notes of a project being deleted
+		Canceling while entering the name of a new note causes a note with no title to be loaded
+	New features:
+		Notes save immediately when you go to a new project
+	Other:
+		When a note tab is deleted, the one to the left is made active (this prevents you from seeing the "new tab" tab)
+		Code for GUI creation and Controller massively cleaned up.
+		New input and confirm dialog boxes.
+		Projects now saved in the "CabraProjects" folder instead of "Cabra."
+
+0.2.0 (changes from 0.2b2)  Feb 2011:
+	General: some blocking bugs removed, and a huge new newlines-allowed card policy. Now backwards-incompatible.
+	Bugs fixed:
+		Notes didn't load if no cards were in the active project
+		Program crashed if there was no active project when the theme was set
+	New features:
+		Newlines are now allowed in card text.
+		Prohibited project deletion when there's just one project left
+		Automatically sets the previous project to active when a project is deleted (you can never not have an active project now)
+
+0.2.0b2 (changes from 0.2b1):
+	General: better looks and bug fixes.
+	Bugs fixed:
+		Exceptions being thrown all over the place when a new user booted up the program for the first time.
+		Fixed possibility of no legal characters in entered project title (would have led to crash.)
+	New features:
+		None
+	Other:
+		Old header/splash screen replaced with a new one
+
+0.2.0b1 (changes from 0.2a2):
+	General: Bugfixes.
+	Bugs fixed:
+		Disallowed characters in project/note names used to cause the project/note to save wrong, now the disallowed characters are removed.
+		Made thread-safe to prevent random errors from being thrown around.
+	New features:
+		Remembers theme upon exit
+		Ability to delete notes
+		
+0.2.0a1 (changes from 0.1.3) - :
+	General: The ability to take notes was added; that's the big thing.
+	Bugs fixed:
+		None
+	New features:
+		Notes
+		
+0.1.3 (changes from 0.1.2) - Jan 2011:
+	General: It may not look like it, but it's a big release, with plenty of themes becoming available.
+	Bugs fixed:
+		None
+	New features:
+		Themes
+		
+0.1.2 (changes from 0.1.1) - Jan 17, 2011:
+	General: a few more improvements and bugfixes.
+	
+0.1.1 (changes from 0.1.0) - Jan 8, 2011:
+	General: a bunch of improvements.
+	
+0.1.0 - Jan 7, 2011:
+	General: First release.
