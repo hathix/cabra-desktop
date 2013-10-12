@@ -1,12 +1,10 @@
-cabra-desktop
+Cabra for Windows, OS X, and Linux
 =============
 
 The ultimate studying app, now for your desktop.
 
 ## Getting started
 Download it from the [website](http://cabra.hathix.com) or find the compiled executable in the dist/ folder.
-
-Cabra for desktop runs on Windows, OS X, and Linux.
 
 ## What's included
 
